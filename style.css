@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Righteous&family=Roboto+Mono:wght@200&display=swap');
+
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: none;
+}
+
+.top-bar {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    top: 0;
+    opacity: 50%;
+    transition: opacity 0.3s;
+}
+
+.top-bar:hover {
+    opacity: 100%;
+}
+
+.top-bar:not(:hover) {
+    opacity: 50%;
+}
+
+.body {
+    position: absolute;
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+    color: white;
+    left: 0;
+    width: 100%;
+    top: 715.5px;
+}
+
+.etapas-texto {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.etapas-list {
+    text-align: center;
+    list-style: none;
+}
+
+.etapas {
+    position: relative;
+}
+
+.titulo-etapas {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.divider {
+    width: 80%;
+}
+
+#logo {
+    position: absolute;
+    width: 35px;
+    left: 10px;
+    top: 7.5px;
+}
+
+#projeto-btn {
+    position: absolute;
+    right: 15px;
+    bottom: -4.5px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-decoration: none;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+#title {
+    text-align: center;
+    font-size: 20px;
+}
+
+#img-galbi {
+    float: left;
+    border-radius: 50%;
+    border-color: white;
+    border: 5px solid white;
+    width: 300px;
+    margin-left: 50px;
+    margin-right: 120px;
+    margin-bottom: 25px;
+}
+
+#about-ifce-content {
+    color: white;
+    width: 80%;
+}
+
+#project-title {
+    text-align: center;
+    font-size: 20px;
+}
+
+#project-text {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#etapas-content {
+    text-align: center;
+    font-size: 20px;
+}
+
+#etapa1-img {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+}
+
+#etapa2-img {
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+}
+
+#etapa3-img {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+}
+
+#etapa4-img {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+}
+
+#etapa5-img {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+}
+
+#etapa6-img {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}

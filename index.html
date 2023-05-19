@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerário - Matemática na Modernidade</title>
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="./imgs/hello-world.gif" id="background">
+    <div class="top-bar">
+        <a href="./index.html">
+            <img src="./imgs/logo.png" id="logo">
+        </a>
+        <p id="projeto-btn">IFCE - Matemática na Modernidade - 1º Semestre</p>
+        </a>
+    </div>
+    <br>
+    <div class="body">
+        <div id="title-about">
+            <p id="title"><b>Sobre o Itinerário Formativo</b></p>
+        </div>
+        <div id="profile-image">
+            <img src="./imgs/galbi.png" id="img-galbi" alt="Profº Galbi, coordenador do IFCE">
+        </div>
+        <div id="about-ifce">
+            <p id="about-ifce-content">Coordenado pelo profº Ricardo Galbi, o Itinerário Formativo de Ciências Exatas de Matemática na Modernidade apresenta três áreas: arquitetura, moda e TI, cada uma com seu projeto. A disciplina busca adaptar-se às demandas dos alunos do ensino médio, com projetos em tecnologia, arquitetura e moda. A matemática aplicada à tecnologia envolve programação, análise de dados e inteligência artificial. Na arquitetura, os alunos exploram geometria e simetria, criando plantas e maquetes. Na moda, a matemática auxilia na criação de padrões e medidas. Essa abordagem amplia as possibilidades de carreira e desenvolve habilidades como pensamento crítico e trabalho em equipe.</p>
+        </div>
+        <br><br>
+        <div class="project-tab">
+            <div id="project">
+                <p id="project-title"><b>Projeto</b></p>
+            </div>
+            <div id="project-content">
+                <p id="project-text">O projeto referente ao primeiro semestre e elaborado pelos alunos: Andreas Grumiché Pantarolo, André Ricardo Pereira, João Pedro da Conceição e Lorenzo Lopes Brenner, é um sistema desenvolvido completamente utilizando a linguagem de programação Python voltado para contabilidade empresarial, que analisa lucros e prejuízos relativos a venda de 20 produtos específicos de um pequeno comércio hipotético.</p>
+                <br>
+                <div class="etapas">
+                    <p id="etapas-content"><b>Etapas</b></p>
+                    <ul>
+                        <li class="etapas-list">Geração de um valor entre 100 e 1000 para cada um dos 20 produtos;</li>
+                        <li class="etapas-list">Conforme o resultado da primeira etapa, define o resultado de vendas<br>de cada produto e a quantidade que foi comprada e adiciona esses<br>dados à uma lista denominada “results”;</li>
+                        <li class="etapas-list">Coleta dos dados gerados na segunda etapa e escrita deles em arquivos de texto;</li>
+                        <li class="etapas-list">Leitura dos arquivos de texto e transcrição dos dados em DataFrames;</li>
+                        <li class="etapas-list">Conversão dos DataFrames em planilhas excel;</li>
+                        <li class="etapas-list">Criação de diretórios para melhor organização.</li>
+                    </ul>
+                    <br>
+                    <div id="primeira-etapa">
+                        <p class="titulo-etapas" id="titulo-pri-etapa"><b>Primeira Etapa</b></p>
+                        <p class="etapas-texto" id="pri-etapa">Nesta etapa, o script gera um valor entre 100 e 1000 para determinar se o resultado da venda de determinado produto, no mês anterior, foi lucro ou prejuízo. Seguindo a seguinte lógica: x ≤ 500 = prejuízo | x > 500 = lucro, sendo x o valor gerado. O fragmento do código acima cria uma classe chamada “produto”, que recebe os argumentos “self”, “nome” e “lista_qtd_compra”, que determinam, respectivamente, uma instância da classe “produto”, para que os dados gerados possam ser extraídos dela posteriormente, o nome do produto e a quantidade de cada produto que será comprada, em relação ao resultado da venda no mês anterior através da função chamada “__init__”. Em seguida, o código determina que, para cada produto, será gerado um valor entre 100 e 1000, que determinará se o resultado de vendas do produto, no mês anterior, foi lucro ou  prejuízo e, com base nesse resultado, determina a possível quantidade desse produto que será comprada posteriormente, que será gerada aleatoriamente, com uma lista de valores possíveis.</p>
+                        <img src="./imgs/etapa1-img.png" alt="Imagem da Etapa 1" id="etapa1-img">
+                        <br><hr class="divider"><br>
+                    </div>
+
+                    <div id="segunda-etapa">
+                        <p class="titulo-etapas" id="titulo-seg-etapa"><b>Segunda Etapa</b></p>
+                        <p class="etapas-texto" id="seg-etapa">Nesta etapa, com base nas informações da primeira etapa, o código determina o resultado de venda do mês anterior e a quantidade comprada pelo dono do comércio para cada um dos 20 dos produtos, e adiciona esses dados para uma lista denominada “results”. O fragmento do código acima, referente a classe de produto “coca”, determina, com base no resultado gerado anteriormente (lucro ou prejuízo), a quantidade a ser comprada do produto, no caso, Coca-Cola. Após isso, os valores são adicionados à lista “results”.</p>
+                        <img src="./imgs/etapa2-img.png" alt="Imagem da Etapa 2" id="etapa2-img"></p>
+                        <br><hr class="divider">
+                    </div>
+
+                    <div id="terceira-etapa">
+                        <p class="titulo-etapas"><b>Terceira Etapa</b></p>
+                        <p class="etapas-texto" id="ter-etapa">Nesta etapa, o código coleta todos os dados referentes aos 20 produtos gerados anteriormente e os escreve em um arquivo de texto, denominado “resultados_X.txt”, sendo X o número da iteração do código, que é um valor entre 1 e 12. O fragmento do código acima define uma função chamada “txt_to_dataframe”, que é responsável pela criação dos arquivos de texto. A função define como será o nome dos arquivos como “resultados_{}.txt”. Dentro das chaves, será imposto um valor numérico entre 1 e 12 referente ao valor da iteração atual do código,  e, depois, testa se o arquivo já existe e, caso existir, define que o próximo arquivo terá o valor relativo à próxima iteração dentro das chaves.</p>
+                        <img src="./imgs/etapa3-img.png" alt="Imagem da Etapa 3" id="etapa3-img">
+                        <br><hr class="divider">
+                    </div>
+                    
+                    <div id="quarta-etapa">
+                        <p class="titulo-etapas"><b>Quarta Etapa</b></p>
+                        <p class="etapas-texto" id="qua-etapa">Nesta etapa, o código lê o arquivo de texto gerado anteriormente e transcreve os dados em um DataFrame, colocando-os em colunas específicas para cada um. O fragmento do código acima cria um loop que passa por cada uma das 20 linhas do arquivo de texto (cada linha com os dados de cada um dos 20 produtos) lendo elas, assim coletando todos os dados do arquivo de texto. Depois, posiciona os nomes dos produtos na coluna “A”, chamada “PRODUTO”, o resultado da venda do mês anterior desse produto na coluna “B”, chamada “RESULTADO” e a quantidade do produto que foi adquirida na coluna “C”, chamada “QTD. COMP”.</p>
+                        <img src="./imgs/etapa4-img.png" alt="Imagem da Etapa 4" id="etapa4-img">
+                        <br><hr class="divider">
+                    </div>
+                    
+                    <div id="quinta-etapa">
+                        <p class="titulo-etapas"><b>Quinta Etapa</b></p>
+                        <p class="etapas-texto" id="qui-etapa">Nesta etapa, o código lê o DataFrame gerado na última etapa e o converte em uma planilha Excel. O fragmento do código acima lê o DataFrame gerado na última etapa e o converte em uma planilha Excel, mantendo a configuração de colunas e linhas determinada anteriormente, porém, dessa vez, atribuindo o nome de cada mês do ano para cada uma das 12 planilhas que serão geradas ao longo das 12 iterações, sendo que cada planilha será referente a cada DataFrame, que será referente a cada arquivo de texto. Fazendo com que, no final, cada planilha receba o nome do mês relativo ao valor da iteração que o código está executando. Seguindo a seguinte lógica: resultados_1.txt = Vendas Janeiro.xlsx | resultados_2.txt = Vendas Fevereiro.xlsx [...]</p>
+                        <img src="./imgs/etapa5-img.png" alt="Imagem da Etapa 5" id="etapa5-img">
+                        <br><hr class="divider">
+                    </div>
+
+                    <div id="sexta-etapa">
+                        <p class="titulo-etapas"><b>Sexta Etapa</b></p>
+                        <p class="etapas-texto" id="sex-etapa">Nesta etapa, o código gera dois diretórios, um chamado “txt” e outro chamado “planilhas”, os quais guardarão , respectivamente, os arquivos de texto e as planilhas Excel geradas. O fragmento do código acima testa se o diretório atual (que o código está sendo executado) já possui as pastas “txt” e “planilhas”, se não tiver, as duas são criadas e os arquivos são transferidos para suas respectivas pastas, caso as pastas já existam, os arquivos simplesmente são transferidos.</p>
+                        <img src="./imgs/etapa6-img.png" alt="Imagem da Etapa 6" id="etapa6-img">
+                    </div>
+                    <br><hr class="divider">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
